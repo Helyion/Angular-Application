@@ -1,0 +1,68 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.button.is-primary {
+  padding: 12px 24px;
+  gap: 8px;
+  background: #2D70FD;
+  border: 1px solid #2D70FD;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  font-feature-settings: 'liga'off;
+  color: #FFFFFF;
+}
+
+.button.is-primary:hover {
+  background: #1f5ada;
+  border-color: #1f5ada;
+}
+
+.button.is-text {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+.field {
+  display: flex;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 8px;
+}
+
+.input {
+  flex-grow: 1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #11175E;
+  border: none;
+  outline: none;
+}
+
+.input::placeholder {
+  letter-spacing: 0.01em;
+  color: #B1BACB;
+}
+
+.input.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

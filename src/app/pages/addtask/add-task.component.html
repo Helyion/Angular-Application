@@ -1,0 +1,4 @@
+<form [formGroup]="taskForm" class="field has-button">
+    <input type="text" formControlName="task" class="input no-border" placeholder="Saisir une nouvelle tâche" id="in">
+    <button type="button" class="button is-primary" [disabled]="taskForm.invalid" (click)="emitAddTask()">Ajouter</button>
+</form>

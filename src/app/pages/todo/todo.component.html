@@ -1,0 +1,14 @@
+<div class="is-flex is-align-center is-fullheight">
+  <div class="container">
+    <h1>MyTodoList</h1>
+
+    <app-add-task (AddTaskEvent)="addTask($event)"></app-add-task>
+    <app-task-list [tasks]="tasks"></app-task-list>
+
+    <hr class="my-3">
+
+    <div class="is-flex is-align-center is-space-between shortcuts">
+      <span class="total-count" >Nombre d'éléments : <span id="compteur">{{nbTasks}}</span></span>
+    </div>
+  </div>
+</div>
